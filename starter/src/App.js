@@ -17,7 +17,7 @@ function App() {
   }, [cartItems]);
 
   useEffect(() => {
-    dispatch(getCartItems())
+    dispatch(getCartItems('random')) // something can be passed from useEffect to slice thunk
   }, []);
 
   if (isLoading){
